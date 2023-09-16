@@ -1,38 +1,414 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+.Nav{
+  background-color: #9ecce4;
+  width: auto;
+  height: 10rem;
+  box-shadow: rgba(231, 231, 236, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+}
+
+.logo {
+  display: grid;
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+.Ser{
+  gap: 15px;
+}
+.logo h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#eee, rgb(212, 60, 207));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo h2 span {
+  font-size: 3.5rem;
+}
+
+.menu-link {
+  grid-column: 3/4;
+
+}
+
+.menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-linkul li {
+  font-size: 1.8rem;
+}
+
+.menu-link ul li a {
+  color: rgba(181, 18, 213, 0.8);
+  transition: 0.5s;
+  font-size: 2.4rem;
+}
+.menu-link ul li:hover > a {
+  transform-origin: left;
+  color: rgba(0, 0, 3, 1);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.Social-media {
+ 
+  grid-column: 4/5;
+}
+
+.Social-media ul {
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+}
+
+.Social-media ul li:first-child {
+  grid-column: 2/3;
+}
+
+.Social-media ul li {
+  font-size: 2.8rem;
+}
+
+.Social-media .hamburger-menu {
+  display: none;
+}
+
+.Instragram {
+  color: #bfeac8;
+}
+
+.Github {
+  color: #e1a5d4;
+}
+
+.linkdin {
+  color: #e3d7d7;
+}
+
+
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #e7b9b9; 
+  padding: 20px 0;
   text-align: center;
+  font-size: 24px;
+}
+/*Home*/
+.Container{
+  margin: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bigimg img{
+  height: 500px;
+  width:800px;
+  border-radius: 2%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bigimg2 img{
+  flex-direction: row;
+  margin-top: 2%;
+  height: 370px;
+  width:600px;
+  border-radius: 2%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bigimg3{
+ margin-left: 200px;
+  
+}
+.smallimg{
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap:4rem;
+ 
+}
+.singleimg{
+  height:130px;
+  width:250px;
+  border-radius: 10px;
+}
+.smallimg img{
+  border-radius: 2%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
+  text-align: center;
+  height:230px;
+  width:260px;
+}
+.img{
+  display: flex;
+  gap:18rem;
+}
+.Latest{
+  margin-top: 60px;
+  font-size: 32px;
+   
+}
+.text{
+  font-size: 18px;
+  margin-left: 20px;
+  margin-left: 20px;
+}
+.text2{
+  margin-left: 20px;
+  font-size: 18px;
+justify-content: end;
+margin-top: 12%;
+
+}
+.number{
+  margin-left:5px;
+  margin-top: 12%;
+}
+.Latest:hover{
+  text-decoration: underline;
+  color: red;
+}
+.LatestDiv{
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.latestimage{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  
+}
+.Latestimage{
+  width: 200px;
+  height: 160px;
+  border-radius: 10px;
+}
+.Article{
+  display: flex;
+
+  margin-top: 40px;
+}
+.Articletext1{
+  margin-left: 20px;
+  height: 120px;
+  width: 350px;
+  font-size: 18px;
+}
+.Articletext{
+  margin-left: 20px;
+  height: 120px;
+  width: 350px;
+  font-size: 16px;
+ 
+  
+}
+.Advertisement{
+  margin-top: 20px;
+  width:350px;
+  height:600px;
+  margin-left: 120px;
+border: 4px solid green;
+}
+.Advertisement h1{
+  text-align: center;
+  margin-top: 50%;
+}
+.Adver{
+display: flex;
+gap:150px;
+border: 4px solid red;
+}
+.underimg{
+  height:110px;
+  width:250px;
+  border-radius: 2%;
+  
+}
+.Advlatest{
+  display: flex;
+  flex-direction: column;
+  border:4px solid green;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.Articlelist{
+  display: flex;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+  flex-direction: column;
+  border:6px solid orange;
+
+}
+/* responsive css style  */
+@media ( max-width: 1080px) {
+  .main-nav {
+    height: 8rem;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+    width: 100%;
+  }
+
+  .logo,
+  .menu-link ul,
+  .social-media ul {
+    height: 8rem;
+  }
+}
+/* responsive css style  */
+@media screen and ( min-width: 280px) and ( max-width: 998px) {
+  .Social-media{
+    display: none;
+  }
+  .main-nav {
+    height: 7rem;
+    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 7rem;
+  }
+
+  .mobile-menu-link {
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+    background-color: white;
+    height: 20rem;
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 2s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .mobile-menu-link ul {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .mobile-menu-link ul li:first-child {
+    transition-delay: 0.2s;
+  }
+
+    .Social-media {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    justify-items: end;
+    align-items: center;
+    transition: all 2s linear;
+  }
+
+  .Social-media .social-media-desktop {
+    height: 0;
+    display: none;
+  } 
+
+  .Social-media {
+    height: 7rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .Social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  } 
+
+  @media (min-width: 570px) {
+    .Social-media {
+      display: none;
+    }
+  } 
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 798px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media ul {
+    height: 6rem;
+  }
+
+  .Social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .Social-media.hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 520px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo,
+  .social-media ul {
+    height: 6rem;
   }
-}
+
+  .logo h2 {
+    font-size: 2rem;
+  }
+
+  .Social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }  
+
+    .Social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+   }
+  }
