@@ -62,7 +62,6 @@ li {
   font-weight: 400;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#eee, rgb(212, 60, 207));
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
