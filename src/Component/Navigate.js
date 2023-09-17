@@ -5,32 +5,27 @@ import { Store } from "../Context/ContextApi";
 const Navigate = () => {
   const [newitem] = useContext(Store);
   const { id } = useParams();
-
-  console.log(id);
+  const itemId = parseInt(id, 10);
+  const selectedItem = newitem.find((item) => item.id === itemId);
+  if (!selectedItem) {
+    return <div>Item not found</div>;
+  }
 
   return (
-    <>
-      {newitem
-        .filter((item) => item.id == id)
-        .map((item, index) => {
-          return (
-            <div key={index}>
-              <p>{item.name}</p>
-              <img
-                className="latestimage"
-                src={item.image}
-                alt="Not Found"
-                height="100px"
-                width="200px"
-              />
-              <div className="text">
-                <h2>{item.name}</h2>
-                <p>{item.text}</p>
-              </div>
-            </div>
-          );
-        })}
-    </>
+    <div key={selectedItem.id}>
+      <p>{selectedItem.name}</p>
+      <img
+        className="latestimage"
+        src={selectedItem.image}
+        alt="Not Found"
+        height="100px"
+        width="200px"
+      />
+      <div className="text">
+        <h2>{selectedItem.name}</h2>
+        <p>{selectedItem.text}</p>
+      </div>
+    </div>
   );
 };
 

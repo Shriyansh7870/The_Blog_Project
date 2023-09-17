@@ -104,16 +104,23 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bigimg2">
-          <img
-            src="https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/07/Jawan-Shah-Rukh-Khan.jpg?ssl=1&quality=80&w=f"
-            alt="not found"
-          ></img>
-          <img
-            className="bigimg3"
-            src="https://i.ytimg.com/vi/R-DH0xD_HUY/maxresdefault.jpg"
-            alt="not found"
-          ></img>
+        <div className="Slidder">
+          {Data.filter((item) => item.id >= 72 && item.id <= 78).map(
+            (item, index) => {
+              return (
+                <div key={index}>
+                  <div className="Article">
+                    <img
+                      className="Latestimage"
+                      src={item.image}
+                      alt="Not Found"
+                    />
+                  </div>
+                  <button></button>
+                </div>
+              );
+            }
+          )}
         </div>
         <h1 className="Latest"> Latest Stories</h1>
         <div className="LatestDiv">
