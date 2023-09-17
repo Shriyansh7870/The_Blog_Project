@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import { Store } from "../Context/ContextApi";
-import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 const Food = () => {
   const [Data] = useContext(Store);
-  const navigate = useNavigate();
+
   console.log(Data);
 
   return (
