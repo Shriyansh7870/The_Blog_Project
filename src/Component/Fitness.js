@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Store } from "../Context/ContextApi";
+import { NavLink } from "react-router-dom";
 const Fitness = () => {
   const [Data] = useContext(Store);
   console.log(Data);
@@ -8,23 +9,23 @@ const Fitness = () => {
       <h1 className="Latest">Technology Article </h1>
       <div className="Adver">
         <div className="Articlelist">
-          {Data.filter((item) => item.category === "Fitness").map(
+          {Data.filter((item) => item.id >= 43 && item.id <= 53).map(
             (item, index) => {
               return (
                 <div key={index}>
-                  <div className="Article">
-                    <img
-                      className="latestimage"
-                      src={item.image}
-                      alt="Not Found"
-                      height="100px"
-                      width="200px"
-                    />
-                    <div className="text">
-                      <h2>{item.title}</h2>
-                      <p>{item.content}</p>
+                  <NavLink to={`/Navigate/${item.id}`}>
+                    <div className="Article">
+                      <img
+                        className="FitnessimageAll"
+                        src={item.image}
+                        alt="Not Found"
+                      />
+                      <div className="text">
+                        <h2>{item.title}</h2>
+                        <p>{item.content.slice(0, 80)}</p>
+                      </div>
                     </div>
-                  </div>
+                  </NavLink>
                 </div>
               );
             }
@@ -38,17 +39,19 @@ const Fitness = () => {
                 (item, index) => {
                   return (
                     <div key={index}>
-                      <div className="Article">
-                        <img
-                          src={item.image}
-                          alt="Not Found"
-                          height="100px"
-                          width="200px"
-                        />
-                        <div className="Articletext">
-                          <p>{item.content}</p>
+                      <NavLink to={`/Navigate/${item.id}`}>
+                        <div className="Article AllOne">
+                          <img
+                            className="singleImageForAll"
+                            src={item.image}
+                            alt="Not Found"
+                          />
+                          <div className="Articletext Allone1">
+                            <h2>{item.content.slice(0, 60)}</h2>
+                            <h1>{index + 1}</h1>
+                          </div>
                         </div>
-                      </div>
+                      </NavLink>
                     </div>
                   );
                 }
@@ -58,21 +61,24 @@ const Fitness = () => {
               (item, index) => {
                 return (
                   <div key={index}>
-                    <div className="Article">
-                      <img
-                        src={item.image}
-                        alt="Not Found"
-                        height="100px"
-                        width="200px"
-                      />
-                      <div className="Articletext">
-                        <p>{item.content}</p>
-                      </div>
+                    <NavLink to={`/Navigate/${item.id}`}>
+                      <div className="Article">
+                        <img
+                          src={item.image}
+                          alt="Not Found"
+                          height="100px"
+                          width="200px"
+                        />
+                        <div className="Articletext">
+                          <h2>{item.title}</h2>
+                          <h3>{item.content.slice(0, 80)}</h3>
+                        </div>
 
-                      <div>
-                        <h1>{index + 1}</h1>
+                        <div>
+                          <h1>{index + 2}</h1>
+                        </div>
                       </div>
-                    </div>
+                    </NavLink>
                   </div>
                 );
               }

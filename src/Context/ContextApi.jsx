@@ -66,7 +66,7 @@ const ContextApi = (props) => {
     {
       id:9,
       category:"Bollywood",
-      name:'',
+      name:'Gully Boy',
       image:'https://i.ytimg.com/vi/JfbxcD6biOk/maxresdefault.jpg',
       text:'"Gully Boy" is a coming-of-age drama that follows the life of Murad Ahmed (played by Ranveer Singh), a young man from a lower-income family in the slums of Mumbai. Murad has a passion for writing and poetry, and he uses this creative outlet to cope with the challenges he faces in his life<br>Living in a small, crowded home with his mother, grandmother, and abusive father, Murad dreams seem limited However, his life takes a turn when he discovers the world of underground rap music in Mumbai, which is thriving with talent and raw energy',
 
@@ -513,7 +513,7 @@ const ContextApi = (props) => {
         category:'Home',
         name:'BlueBettle',
         image:'https://filmfare.wwmindia.com/thumb/content/2023/aug/upcominghollywoodmovies21690962006.jpg?width=1200&height=900', 
-        text:'According to box office insider Luiz Fet another DCEU flop on its hands.',
+        text:'According to box office insider Luiz Fet  another DCEU flop on its hands  Max has been releasing new DC Comics movies in roughly 70 days or less which suggests there is a chance the movie could arrive in late October. This hinted that we could see Blue Beetle stream on Max as early as October 13, but that date no longer seems likely.',
       },
       {
         id: 73,

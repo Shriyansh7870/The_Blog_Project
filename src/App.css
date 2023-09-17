@@ -18,42 +18,6 @@ body {
   padding: 0;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -170,7 +134,13 @@ li {
   color: #e3d7d7;
 }
 /* ...... Navbar.......*/
-
+.divinner{
+  position: relative;
+  top:90px;
+  width: 650px;
+  height: 360px;
+  border-radius: 15px;
+}
 footer {
   width: 100%;
   height: 10rem;
@@ -181,56 +151,43 @@ footer {
 }
 /*Home*/
 .Container{
+
   margin: 50px;
-  border: 6px solid rgb(24, 16, 1);
+
 }
-.Slidder{
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-  padding: 10px;
-  margin: 10px;
-  overflow-y: hidden;
-  overflow-x: scroll;
-}
+
 .bigimg img{
   height: 500px;
-  width:800px;
+  width:850px;
   border-radius: 2%;
-  border: 2px solid pink;
 }
 .bigimg2 {
   height: 350px;
   width:400px;
   border-radius: 2%;
-  border: 4px solid rgb(229, 12, 48);
   
 }
 .bigimg3{
   height: 350px;
   width:400px;
   border-radius: 2%;
-  border: 4px solid rgb(229, 12, 48);
 }
 .bigimg4{
   height: 350px;
   width:400px;
   border-radius: 2%;
-  border: 4px solid rgb(229, 12, 48);
 }
 .smallimg{
   
   display: flex;
   flex-direction: column;
-  gap:4rem;
-  border: 5px solid blue;
- 
+  gap:3rem;
 }
 .singleimg{
   height:130px;
   width:250px;
   border-radius: 10px;
-  border: 5px solid rgb(1, 1, 21);
+ 
  
 }
 .smallimg img{
@@ -239,14 +196,15 @@ footer {
   justify-items: center;
   text-align: center;
   height:230px;
-  width:260px;
+  width:350px;
 }
 .img{
   display: flex;
-  gap:18rem;
+  gap:8rem;
 }
 .Latest{
-  margin-top: 60px;
+  margin-left: 20px;
+  margin-top: 50px;
   font-size: 32px;
    
 }
@@ -255,42 +213,83 @@ footer {
   margin-left: 20px;
   margin-left: 20px;
 }
+.movieName{
+  font-size:24px ;
+  color: #0d9be7;
+}
 .text2{
   margin-left: 20px;
   font-size: 18px;
-justify-content: end;
-margin-top: 12%;
+  justify-content: end;
+ margin-top: 8%;
+ color: #89c2e1;
 
 }
 .number{
-  margin-left:5px;
+  margin-left:14px;
   margin-top: 12%;
+  color: #021f2f;
 }
 .Latest:hover{
   text-decoration: underline;
   color: red;
 }
+
 .LatestDiv{
-  margin: 15px;
+  margin: 20px;
   display: flex;
   justify-content: space-between;
 }
 .latestimage{
+  margin-left: 25px;
   width: 200px;
   height: 200px;
+  border-radius: 10px;  
+ 
+}
+.FitnessimageAll{
+  margin-left: 25px;
+  width: 450px;
+  height: 200px;
   border-radius: 10px;
-  border: 7px solid red;
+  border: 4px solid green; 
+}
+.singleImageForAll{
+  height:120px;
+  width:300px;
+  border-radius: 10px;
+}
+.MultipleImageForAll{
+  height:100px;
+  width:200px;
+  border-radius: 10px;
+}
+.latestimage4{
+  margin-left: 25px;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+
 }
 .Latestimage{
-  width: 200px;
+  width: 280px;
   height: 160px;
   border-radius: 10px;
-  border: 7px solid red;
+ 
+}
+.Latestimage2{
+  width: 190px;
+  height: 160px;
+  border-radius: 10px;
+
 }
 .Article{
   display: flex;
 
-  margin-top: 40px;
+  margin-top: 20px;
+}
+.Articleother{
+  margin-top: 10px;
 }
 .Articletext1{
   margin-left: 20px;
@@ -302,9 +301,13 @@ margin-top: 12%;
   margin-left: 20px;
   height: 120px;
   width: 350px;
-  font-size: 16px;
- 
+  font-size: 12px;
+ color: #0d9be7;
   
+}
+.Allone1{
+  display: flex;
+  flex-direction: column;
 }
 .Advertisement{
   margin-top: 20px;
@@ -314,13 +317,15 @@ margin-top: 12%;
 border: 4px solid green;
 }
 .Advertisement h1{
+  color: rgb(157, 157, 230);
   text-align: center;
   margin-top: 50%;
 }
 .Adver{
 display: flex;
-gap:150px;
-border: 4px solid red;
+gap:100px;
+
+
 }
 .underimg{
   height:110px;
@@ -331,7 +336,7 @@ border: 4px solid red;
 .Advlatest{
   display: flex;
   flex-direction: column;
-  border:4px solid green;
+ 
   margin-right: 10px;
   margin-top: 10px;
 }
@@ -341,8 +346,14 @@ border: 4px solid red;
   margin-top: 10px;
   margin-left: 10px;
   flex-direction: column;
-  border:6px solid orange;
+  
 
+}
+.AllOne{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  /* margin-bottom: 10px; */
 }
 /* responsive css style  */
 @media ( max-width: 1080px) {
