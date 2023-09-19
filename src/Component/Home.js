@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Store } from "../Context/ContextApi";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const [Data] = useContext(Store);
@@ -30,27 +31,21 @@ const Home = () => {
 
       <h1 className="Latest">The Latest</h1>
       <div className="LatestDiv">
-        {Data.filter((item) => item.id >= 72 && item.id <= 74).map(
+        {Data.filter((item) => item.id >= 65 && item.id <= 67).map(
           (item, index) => {
-            const words = item.text?.split(" ") || [];
-            const displayText =
-              words.length < 5
-                ? `${words.slice(0, 5).join(" ")}...`
-                : item.name || "";
-            const word = item.name?.split(" ") || [];
-            const displayText1 =
-              words.length < 20
-                ? `${word.slice(0, 20).join(" ")}...`
-                : item.name || "";
             return (
-              <div key={index}>
-                <img className="latestimage" src={item.image} alt="Not Found" />
-                <div className="text">
-                  <p className="movieName">{item.name?.slice(0, 29) || ""}</p>
-                  <p>{displayText1}</p>
-                  <p>{item.text?.slice(0, 40) || ""}...</p>
-                  <p>{displayText}</p>
-                </div>
+              <div key={index} className="HomeLatest">
+                <NavLink to={`/Navigate/${item.id}`}>
+                  <img
+                    className="latestimage"
+                    src={item.image}
+                    alt="Not Found"
+                  />
+                  <div className="text4">
+                    <h2>{item.name}</h2>
+                    <p>{item.text.slice(0, 80)}</p>
+                  </div>
+                </NavLink>
               </div>
             );
           }
@@ -58,7 +53,7 @@ const Home = () => {
       </div>
       <h1 className="Latest">The Latest Article</h1>
       <div className="Adver">
-        <div className="Articlelist">
+        <div className="Articlelist ">
           {Data.filter((item) => item.id >= 72 && item.id <= 77).map(
             (item, index) => {
               const wordnext2 = item.name?.split(" ") || [];
@@ -68,17 +63,19 @@ const Home = () => {
                   : item.name || "";
               return (
                 <div key={index}>
-                  <div className="Article">
-                    <img
-                      className="Latestimage"
-                      src={item.image}
-                      alt="Not Found"
-                    />
-                    <div className="Articletext">
-                      <h1>{displayText3}</h1>
-                      <p className="text">{item.text?.slice(0, 120) || ""}</p>
+                  <NavLink to={`/Navigate/${item.id}`}>
+                    <div className="Article  NewResponsiveArticle">
+                      <img
+                        className="Latestimage"
+                        src={item.image}
+                        alt="Not Found"
+                      />
+                      <div className="ArticelResponsivetext">
+                        <h1>{displayText3}</h1>
+                        <p>{item.text?.slice(0, 70) || ""}</p>
+                      </div>
                     </div>
-                  </div>
+                  </NavLink>
                 </div>
               );
             }
@@ -93,13 +90,9 @@ const Home = () => {
           />
         </div>
         <div className="Advlatest">
-          <div className="Advertisement">
-            <h1>{"Please for Advertisement"}</h1>
-          </div>
-
           <div>
             <h1 className="Latest">Top Post</h1>
-            {Data.filter((item) => item.id >= 72 && item.id <= 76).map(
+            {Data.filter((item) => item.id >= 72 && item.id <= 75).map(
               (item, index) => {
                 const wordnext = item.text?.split(" ") || [];
                 const displayText2 =
@@ -108,26 +101,31 @@ const Home = () => {
                     : item.name || "";
                 return (
                   <div key={index}>
-                    <div className="Article">
-                      <img
-                        className="Latestimage2"
-                        src={item.image}
-                        alt="Not Found"
-                      />
-                      <div className="text2">
-                        <h3>{item.name}</h3>
-                        <p>{displayText2}</p>
-                        <p>{item.text?.slice(0, 40) || ""}</p>
-                      </div>
+                    <NavLink to={`/Navigate/${item.id}`}>
+                      <div className="Article">
+                        <img
+                          className="Latestimage2"
+                          src={item.image}
+                          alt="Not Found"
+                        />
+                        <div className="text2">
+                          <h3>{item.name}</h3>
+                          <p>{displayText2}</p>
+                          <p>{item.text?.slice(0, 40) || ""}</p>
+                        </div>
 
-                      <div className="number">
-                        <h1>{index + 1}</h1>
+                        <div className="number">
+                          <h1>{index + 1}</h1>
+                        </div>
                       </div>
-                    </div>
+                    </NavLink>
                   </div>
                 );
               }
             )}
+          </div>
+          <div className="Advertisement">
+            <h1>{"Please for Advertisement"}</h1>
           </div>
         </div>
       </div>
@@ -136,31 +134,19 @@ const Home = () => {
       <div className="LatestDiv">
         {Data.filter((item) => item.id % 10 === 0 && item.id <= 30).map(
           (item, index) => {
-            const words = item.text?.split(" ") || [];
-            const displayText =
-              words.length < 5
-                ? `${words.slice(0, 5).join(" ")}...`
-                : item.name || "";
-            const word = item.name?.split(" ") || [];
-            const displayText1 =
-              words.length < 20
-                ? `${word.slice(0, 20).join(" ")}...`
-                : item.name || "";
             return (
-              <div key={index}>
-                <img
-                  className="latestimage4"
-                  src={item.image}
-                  alt="Not Found"
-                  height="100px"
-                  width="200px"
-                />
-                <div className="text">
-                  <p className="movieName">{item.name?.slice(0, 29) || ""}</p>
-                  <p>{displayText1}</p>
-                  <p>{item.text?.slice(0, 40) || ""}...</p>
-                  <p>{displayText}</p>
-                </div>
+              <div key={index} className="HomeLatest">
+                <NavLink to={`/Navigate/${item.id}`}>
+                  <img
+                    className="latestimage"
+                    src={item.image}
+                    alt="Not Found"
+                  />
+                  <div className="text">
+                    <h2>{item.name}</h2>
+                    <p>{item.text.slice(0, 135)}..</p>
+                  </div>
+                </NavLink>
               </div>
             );
           }

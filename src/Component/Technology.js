@@ -22,7 +22,7 @@ const Technology = () => {
                     />
                     <div className="text">
                       <h2>{item.name}</h2>
-                      <p>{item.text}</p>
+                      <p>{item.text.slice(0, 80)}</p>
                     </div>
                   </div>
                 </NavLink>
@@ -34,7 +34,7 @@ const Technology = () => {
           <div>
             <h1 className="Latest">Top Post</h1>
             <div>
-              {Data.filter((item) => item.id === 29).map((item, index) => (
+              {Data.filter((item) => item.id === 41).map((item, index) => (
                 <div key={index}>
                   <NavLink to={`/Navigate/${item.id}`}>
                     <div className="Article AllOne">
@@ -52,9 +52,9 @@ const Technology = () => {
                 </div>
               ))}
             </div>
-            {Data.filter((item) => item.id >= 30 && item.id <= 35).map(
+            {Data.filter((item) => item.id <= 40 && item.id >= 33).map(
               (item, index) => (
-                <div key={index}>
+                <div key={index} className="toppostdiv">
                   <NavLink to={`/Navigate/${item.id}`}>
                     <div className="Article">
                       <img
@@ -66,7 +66,7 @@ const Technology = () => {
                         <h2>{item.name}</h2>
                         <p>{item.text.slice(0, 80)}</p>
                       </div>
-                      <div>
+                      <div className="number">
                         <h1>{index + 2}</h1>
                       </div>
                     </div>

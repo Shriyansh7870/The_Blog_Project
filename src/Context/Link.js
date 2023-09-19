@@ -9,30 +9,28 @@ import Food from "../Component/Food";
 import Bollywood from "../Component/Bollywood";
 import Hollywood from "../Component/Hollywood";
 import Navigate from "../Component/Navigate";
-import {
-  FaGithubSquare,
-  FaInstagramSquare,
-  FaLinkedinIn,
-} from "react-icons/fa";
 
 const NavBar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <BrowserRouter>
-        <div className="Nav">
-          <div className="logo">
-            <h2>
-              <span>THE</span>
-              <span className="Ser">SERIEM</span>
-            </h2>
-          </div>
-          <div
-            className={
-              showMediaIcons ? "menu-link mobile-menu-link" : "menu-link "
-            }
-          >
-            <ul>
+        <div className={`Nav ${menuOpen ? "open show" : ""}`}>
+          <div className="header-content">
+            <div className="logo">
+              <h2>
+                <span className="the">THE</span>
+                <span className="Ser">SRIEN</span>
+              </h2>
+            </div>
+            <GiHamburgerMenu className="menu-icon" onClick={toggleMenu} />
+
+            <ul className={`menu ${menuOpen ? "open" : ""}`}>
               <li>
                 <Link to={"/"}>Home</Link>
               </li>
@@ -53,36 +51,6 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className="Social-media">
-            <ul className="social-media-desktop">
-              <li>
-                <Link
-                  to={"https://www.instagram.com/shriyansh7870/"}
-                  target="_newPage"
-                >
-                  <FaInstagramSquare className="Instragram"></FaInstagramSquare>
-                </Link>
-              </li>
-              <li>
-                <Link to={"https://github.com/Shriyansh7870"} target="_newPage">
-                  <FaGithubSquare className="Github"></FaGithubSquare>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"https://www.linkedin.com/in/shri7870/"}
-                  target="_newPage"
-                >
-                  <FaLinkedinIn className="linkdin"></FaLinkedinIn>
-                </Link>
-              </li>
-            </ul>
-            <div className="hamburger-menu">
-              <Link to={"#"} onClick={() => setShowMediaIcons(!showMediaIcons)}>
-                <GiHamburgerMenu></GiHamburgerMenu>
-              </Link>
-            </div>
-          </div>
         </div>
         <ContextApi>
           <Routes>
@@ -99,6 +67,24 @@ const NavBar = () => {
       <footer>
         <div className="footer-content">
           <p>&copy; 2023 Shriyansh Kumar</p>
+        </div>
+        <div className="NavIcons">
+          <div className="leftNav">
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+          </div>
+          <div className="icons">
+            <h2>
+              <i className="fa-brands fa-square-instagram"></i>
+            </h2>
+            <h2>
+              <i className="fa-brands fa-github"></i>
+            </h2>
+            <h2>
+              <i className="fa-brands fa-facebook"></i>
+            </h2>
+          </div>
         </div>
       </footer>
     </>

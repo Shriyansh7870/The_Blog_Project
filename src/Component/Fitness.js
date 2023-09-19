@@ -6,7 +6,7 @@ const Fitness = () => {
   console.log(Data);
   return (
     <>
-      <h1 className="Latest">Technology Article </h1>
+      <h1 className="Latest">Fitness Article </h1>
       <div className="Adver">
         <div className="Articlelist">
           {Data.filter((item) => item.id >= 43 && item.id <= 53).map(
@@ -14,13 +14,13 @@ const Fitness = () => {
               return (
                 <div key={index}>
                   <NavLink to={`/Navigate/${item.id}`}>
-                    <div className="Article">
+                    <div className="Article Article2Respo">
                       <img
                         className="FitnessimageAll"
                         src={item.image}
                         alt="Not Found"
                       />
-                      <div className="text">
+                      <div className="text  textFitness">
                         <h2>{item.title}</h2>
                         <p>{item.content.slice(0, 80)}</p>
                       </div>
@@ -35,19 +35,19 @@ const Fitness = () => {
           <div>
             <h1 className="Latest">Top Post</h1>
             <div>
-              {Data.filter((item) => item.id >= 43 && item.id <= 43).map(
+              {Data.filter((item) => item.id >= 51 && item.id <= 51).map(
                 (item, index) => {
                   return (
                     <div key={index}>
                       <NavLink to={`/Navigate/${item.id}`}>
-                        <div className="Article AllOne">
+                        <div className="Article AllOne ">
                           <img
                             className="singleImageForAll"
                             src={item.image}
                             alt="Not Found"
                           />
                           <div className="Articletext Allone1">
-                            <h2>{item.content.slice(0, 60)}</h2>
+                            <h2>{item.content.slice(0, 30)}</h2>
                             <h1>{index + 1}</h1>
                           </div>
                         </div>
@@ -60,21 +60,20 @@ const Fitness = () => {
             {Data.filter((item) => item.id >= 42 && item.id <= 50).map(
               (item, index) => {
                 return (
-                  <div key={index}>
+                  <div key={index} className="toppostdiv">
                     <NavLink to={`/Navigate/${item.id}`}>
-                      <div className="Article">
+                      <div className="Article Article2Respo">
                         <img
                           src={item.image}
                           alt="Not Found"
                           height="100px"
                           width="200px"
                         />
-                        <div className="Articletext">
+                        <div className=" Allone1">
                           <h2>{item.title}</h2>
-                          <h3>{item.content.slice(0, 80)}</h3>
+                          <h3>{item.content.slice(0, 60)}</h3>
                         </div>
-
-                        <div>
+                        <div className="number">
                           <h1>{index + 2}</h1>
                         </div>
                       </div>
@@ -83,7 +82,7 @@ const Fitness = () => {
                 );
               }
             )}
-            <div className="Advertisement">
+            <div className=" Advertisement Advertisementnew">
               <h1>{"Please  for Advertisement"}</h1>
             </div>
           </div>

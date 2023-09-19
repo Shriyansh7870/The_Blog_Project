@@ -8,11 +8,11 @@ const Food = () => {
 
   return (
     <>
-      <h1 className="Latest">Technology Articles</h1>
+      <h1 className="Latest">Food Articles</h1>
 
       <div className="Adver">
         <div className="Articlelist">
-          {Data.filter((item) => item.id >= 57 && item.id <= 67).map(
+          {Data.filter((item) => item.id >= 57 && item.id <= 65).map(
             (item, index) => (
               <div key={index}>
                 <NavLink to={`/Navigate/${item.id}`}>
@@ -25,7 +25,7 @@ const Food = () => {
                     <div className="text">
                       <div className="Articletext">
                         <h2>{item.name}</h2>
-                        <p>{item.text.slice(0, 180)}...</p>
+                        <p>{item.text.slice(0, 70)}...</p>
                       </div>
                     </div>
                   </div>
@@ -38,7 +38,7 @@ const Food = () => {
           <div>
             <h1 className="Latest">Top Posts</h1>
             <div>
-              {Data.filter((item) => item.id >= 57 && item.id <= 57).map(
+              {Data.filter((item) => item.id >= 60 && item.id <= 60).map(
                 (item, index) => (
                   <div key={index}>
                     <NavLink to={`/Navigate/${item.id}`}>
@@ -50,8 +50,10 @@ const Food = () => {
                         />
                         <div className="Articletext Allone">
                           <h2>{item.name}</h2>
-                          <p>{item.text.slice(0, 60)}</p>
-                          <p>{index + 1}</p>
+                          <p>{item.text.slice(0, 40)}</p>
+                          <div className="number">
+                            <p>{index + 1}</p>
+                          </div>
                         </div>
                       </div>
                     </NavLink>
@@ -59,9 +61,9 @@ const Food = () => {
                 )
               )}
             </div>
-            {Data.filter((item) => item.id >= 58 && item.id <= 61).map(
+            {Data.filter((item) => item.id <= 70 && item.id >= 65).map(
               (item, index) => (
-                <div key={index}>
+                <div key={index} className="toppostdiv">
                   <NavLink to={`/Navigate/${item.id}`}>
                     <div className="Article">
                       <img
@@ -70,10 +72,12 @@ const Food = () => {
                         height="100px"
                         width="200px"
                       />
-                      <div className="Articletext">
+                      <div className="Articletext Allone1">
                         <h2>{item.name}</h2>
                         <p>{item.text.slice(0, 80)}</p>
-                        <p>{index + 2}</p>
+                      </div>
+                      <div className="number">
+                        <h1>{index + 2}</h1>
                       </div>
                     </div>
                   </NavLink>

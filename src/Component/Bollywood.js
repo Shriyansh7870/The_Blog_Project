@@ -57,10 +57,10 @@ const Bollywood = () => {
                 }
               )}
             </div>
-            {Data.filter((item) => item.id >= 3 && item.id <= 8).map(
+            {Data.filter((item) => item.id >= 10 && item.id <= 16).map(
               (item, index) => {
                 return (
-                  <div key={index}>
+                  <div key={index} className="toppostdiv">
                     <NavLink to={`/Navigate/${item.id}`}>
                       <div className="Article">
                         <img
@@ -69,12 +69,12 @@ const Bollywood = () => {
                           height="100px"
                           width="200px"
                         />
-                        <div className="Articletext">
+                        <div className="Articletext Allone1">
                           <h2>{item.name}</h2>
                           <p>{item.text.slice(0, 80)}</p>
                         </div>
 
-                        <div>
+                        <div className="number">
                           <h1>{index + 2}</h1>
                         </div>
                       </div>

@@ -6,10 +6,10 @@ const Hollywood = () => {
   console.log(Data);
   return (
     <>
-      <h1 className="Latest">Technology Article </h1>
+      <h1 className="Latest">Hollywood Article </h1>
       <div className="Adver">
         <div className="Articlelist">
-          {Data.filter((item) => item.id >= 17 && item.id <= 27).map(
+          {Data.filter((item) => item.id >= 17 && item.id <= 25).map(
             (item, index) => {
               return (
                 <div key={index}>
@@ -35,7 +35,7 @@ const Hollywood = () => {
           <div>
             <h1 className="Latest">Top Post</h1>
             <div>
-              {Data.filter((item) => item.id >= 16 && item.id <= 16).map(
+              {Data.filter((item) => item.id >= 25 && item.id <= 25).map(
                 (item, index) => {
                   return (
                     <div key={index}>
@@ -57,10 +57,10 @@ const Hollywood = () => {
                 }
               )}
             </div>
-            {Data.filter((item) => item.id >= 17 && item.id <= 21).map(
+            {Data.filter((item) => item.id <= 28 && item.id >= 23).map(
               (item, index) => {
                 return (
-                  <div key={index}>
+                  <div key={index} className="toppostdiv">
                     <NavLink to={`/Navigate/${item.id}`}>
                       <div className="Article">
                         <img
@@ -74,7 +74,7 @@ const Hollywood = () => {
                           <p>{item.text.slice(0, 80)}</p>
                         </div>
 
-                        <div>
+                        <div className="number">
                           <h1>{index + 2}</h1>
                         </div>
                       </div>
