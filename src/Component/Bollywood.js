@@ -7,7 +7,7 @@ const Bollywood = () => {
   return (
     <>
       <h1 className="Latest">Bollywood Article </h1>
-      <div className="Fitness">
+      <div className="Bollywood">
         <div className="Adver ">
           <div className="Articlelist">
             {Data.filter((item) => item.id >= 1 && item.id <= 10).map(
@@ -65,6 +65,7 @@ const Bollywood = () => {
                       <NavLink to={`/Navigate/${item.id}`}>
                         <div className="Article Article2Respo">
                           <img
+                            className="bollyimg"
                             src={item.image}
                             alt="Not Found"
                             height="130px"

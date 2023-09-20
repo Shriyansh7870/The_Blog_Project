@@ -20,36 +20,37 @@ const NavBar = () => {
   return (
     <>
       <BrowserRouter>
-        <div className={`Nav ${menuOpen ? "open show" : ""}`}>
-          <div className="header-content">
-            <div className="logo">
-              <h2>
-                <span className="the">THE</span>
-                <span className="Ser">SRIEN</span>
-              </h2>
-            </div>
-            <GiHamburgerMenu className="menu-icon" onClick={toggleMenu} />
+        <div className="logo">
+          <div class="final">
+            <div className="the">The</div>
+            <div className="siren">Siren</div>
+          </div>
 
-            <ul className={`menu ${menuOpen ? "open" : ""}`}>
-              <li>
-                <Link to={"/"}>Home</Link>
-              </li>
-              <li>
-                <Link to={"/Fitness"}>Fitness</Link>
-              </li>
-              <li>
-                <Link to={"/Technology"}>Technology</Link>
-              </li>
-              <li>
-                <Link to={"/Bollywood"}>Bollywood</Link>
-              </li>
-              <li>
-                <Link to={"/Hollywood"}>Hollywood</Link>
-              </li>
-              <li>
-                <Link to="/Food">Food</Link>
-              </li>
-            </ul>
+          <div className={`Nav ${menuOpen ? "open show" : ""}`}>
+            <div className="header-content">
+              <GiHamburgerMenu className="menu-icon" onClick={toggleMenu} />
+
+              <ul className={`menu ${menuOpen ? "open" : ""}`}>
+                <li>
+                  <Link to={"/"}>Home</Link>
+                </li>
+                <li>
+                  <Link to={"/Fitness"}>Fitness</Link>
+                </li>
+                <li>
+                  <Link to={"/Technology"}>Technology</Link>
+                </li>
+                <li>
+                  <Link to={"/Bollywood"}>Bollywood</Link>
+                </li>
+                <li>
+                  <Link to={"/Hollywood"}>Hollywood</Link>
+                </li>
+                <li>
+                  <Link to="/Food">Food</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <ContextApi>
@@ -65,24 +66,32 @@ const NavBar = () => {
         </ContextApi>
       </BrowserRouter>
       <footer>
-        <div className="footer-content">
-          <p>&copy; 2023 Shriyansh Kumar</p>
-        </div>
         <div className="NavIcons">
           <div className="leftNav">
             <p>Home</p>
             <p>About</p>
             <p>Contact</p>
           </div>
+          <p className="footer-content">&copy; 2023 Shriyansh Kumar</p>
           <div className="icons">
             <h2>
-              <i className="fa-brands fa-square-instagram"></i>
+              <a
+                href="https://www.instagram.com/shriyansh7870/"
+                target="_blank"
+              >
+                {" "}
+                <i className="fa-brands fa-square-instagram"></i>
+              </a>
             </h2>
             <h2>
-              <i className="fa-brands fa-github"></i>
+              <a href="https://github.com/Shriyansh7870" target="_blank">
+                <i className="fa-brands fa-github"></i>
+              </a>
             </h2>
             <h2>
-              <i className="fa-brands fa-facebook"></i>
+              <a href="https://www.linkedin.com/in/shri7870/" target="_blank">
+                <i className="fa-brands fa-facebook"></i>
+              </a>
             </h2>
           </div>
         </div>

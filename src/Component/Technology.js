@@ -8,7 +8,7 @@ const Technology = () => {
   return (
     <>
       <h1 className="Latest">Technology Article </h1>
-      <div className="Fitness">
+      <div className="Technology">
         <div className="Adver">
           <div className="Articlelist">
             {Data.filter((item) => item.id >= 30 && item.id <= 38).map(

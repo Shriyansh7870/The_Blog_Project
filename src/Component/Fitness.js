@@ -67,6 +67,7 @@ const Fitness = () => {
                     <NavLink to={`/Navigate/${item.id}`}>
                       <div className="Article Article2Respo">
                         <img
+                          className="FitnessImgRes"
                           src={item.image}
                           alt="Not Found"
                           height="100px"

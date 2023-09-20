@@ -14,7 +14,7 @@ const Navigate = () => {
         item.category === categorynew &&
         (item.id % 5 === 1 || item.id % 3 === 2 || item.id % 3 === 0)
     )
-    .slice(0, 3);
+    .slice(1, 4);
   console.log(categorynew);
 
   return (
@@ -62,12 +62,12 @@ const Navigate = () => {
             width="550px"
           />
           <br />
-          <h2>{selectedItem.text}</h2>
-          <h2>{selectedItem.content}</h2>
+          <p className="navtext">{selectedItem.text}</p>
+          <p>{selectedItem.content}</p>
         </div>
         <div className="rightDetails"></div>
       </div>
-      <div className="LatestDiv">
+      <div className="LatestDiv  navigateimg2">
         {relatedItems.map((item, index) => (
           <div key={index} className="HomeLatest">
             <NavLink to={`/Navigate/${item.id}`}>
