@@ -67,7 +67,7 @@ const Home = () => {
                       />
                       <div className="ArticelResponsivetext">
                         <h1>{item.name.slice(0, 20)}..</h1>
-                        <p>{item.text.slice(0, 160)}</p>
+                        <p>{item.text.slice(0, 140)}</p>
                       </div>
                     </div>
                   </NavLink>
@@ -130,7 +130,7 @@ const Home = () => {
                   />
                   <div className="text">
                     <h2>{item.name.slice(0, 14)}..</h2>
-                    <p>{item.text.slice(0, 135)}..</p>
+                    <p>{item.text.slice(0, 105)}..</p>
                   </div>
                 </NavLink>
               </div>
