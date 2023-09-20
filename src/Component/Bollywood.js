@@ -7,7 +7,7 @@ const Bollywood = () => {
   return (
     <>
       <h1 className="Latest">Bollywood Article </h1>
-      <div className="Adver">
+      <div className="Adver ">
         <div className="Articlelist">
           {Data.filter((item) => item.id >= 1 && item.id <= 10).map(
             (item, index) => {
@@ -22,7 +22,7 @@ const Bollywood = () => {
                       />
                       <div className="text">
                         <h2>{item.name}</h2>
-                        <p>{item.text.slice(0, 180)}...</p>
+                        <p>{item.text.slice(0, 80)}...</p>
                       </div>
                     </div>
                   </NavLink>
@@ -48,7 +48,7 @@ const Bollywood = () => {
                           />
                           <div className="Articletext Allone1">
                             <h2>{item.text.slice(0, 60)}</h2>
-                            <h1>{index + 1}</h1>
+                            {/* <h1>{index + 1}</h1> */}
                           </div>
                         </div>
                       </NavLink>
@@ -62,14 +62,14 @@ const Bollywood = () => {
                 return (
                   <div key={index} className="toppostdiv">
                     <NavLink to={`/Navigate/${item.id}`}>
-                      <div className="Article">
+                      <div className="Article Article2Respo">
                         <img
                           src={item.image}
                           alt="Not Found"
-                          height="100px"
+                          height="130px"
                           width="200px"
                         />
-                        <div className="Articletext Allone1">
+                        <div className=" Allone1">
                           <h2>{item.name}</h2>
                           <p>{item.text.slice(0, 80)}</p>
                         </div>

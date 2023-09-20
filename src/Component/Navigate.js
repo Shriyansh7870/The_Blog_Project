@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import { Store } from "../Context/ContextApi";
 
 const Navigate = () => {
@@ -7,8 +7,18 @@ const Navigate = () => {
   const { id } = useParams();
   const itemId = parseInt(id);
   const selectedItem = newitem.find((item) => item.id === itemId);
+  const categorynew = selectedItem ? selectedItem.category : "";
+  const relatedItems = newitem
+    .filter(
+      (item) =>
+        item.category === categorynew &&
+        (item.id % 5 === 1 || item.id % 3 === 2 || item.id % 3 === 0)
+    )
+    .slice(0, 3);
+  console.log(categorynew);
+
   return (
-    <>
+    <div>
       <div className="ParentTop">
         <div className="leftDetail">
           <div className="Like">
@@ -24,11 +34,10 @@ const Navigate = () => {
         <div className="detail">
           <h1>{selectedItem.name}</h1>
           <h1>{selectedItem.title}</h1>
-
           <div className="Profile">
             <div className="Prof">
               <h4>
-                <i class="fa-solid fa-user">
+                <i className="fa-solid fa-user">
                   <span className="small">Shriyansh kumar</span>
                 </i>
               </h4>
@@ -38,7 +47,6 @@ const Navigate = () => {
                 <i className="fa-brands fa-square-instagram"></i>
               </h2>
               <h2>
-                {" "}
                 <i className="fa-brands fa-github"></i>
               </h2>
               <h2>
@@ -46,7 +54,6 @@ const Navigate = () => {
               </h2>
             </div>
           </div>
-
           <img
             className="NavigateImg"
             src={selectedItem.image}
@@ -60,7 +67,20 @@ const Navigate = () => {
         </div>
         <div className="rightDetails"></div>
       </div>
-    </>
+      <div className="LatestDiv">
+        {relatedItems.map((item, index) => (
+          <div key={index} className="HomeLatest">
+            <NavLink to={`/Navigate/${item.id}`}>
+              <img className="latestimage" src={item.image} alt="Not Found" />
+              <div className="text">
+                <h2>{item.name}</h2>
+                <p>{item.text.slice(0, 135)}..</p>
+              </div>
+            </NavLink>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

@@ -15,9 +15,11 @@ footer {
 }
 .Articletext{
   color:black;
+  margin-left: 10px;
 }
 .Allone1{
   color: black;
+  margin-left: 5px;
 }
 .footer-content {
   font-size: 14px;
@@ -246,6 +248,8 @@ a{
 }
 .text p{
   text-align: center;
+  margin-left: 10px;
+  width: 300px;
 }
 
 .number{
@@ -355,7 +359,7 @@ border: 4px solid rgb(216, 140, 140);
 }
 .Adver{
 display: flex;
-gap:180px;
+gap:160px;
 
 }
 .underimg{
@@ -462,7 +466,7 @@ gap:180px;
 
 @media screen and ( min-width: 280px) and ( max-width: 998px) {
   body{
-    border: 3px solid red;
+  
   }
  
 
@@ -489,6 +493,10 @@ gap:180px;
     height: 350px;
     width:400px;
     border-radius: 2%;
+  }
+  .toppostdiv{
+    padding: 10px;
+    width: 350px;
   }
   .smallimg{
     margin-top: 320px;
@@ -519,16 +527,22 @@ gap:180px;
     justify-content: space-around;
     text-align: center;
     flex-direction: column;
-    width: auto;
     justify-content: center;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 10px;
+    gap:10px;
     /* border:4px solid orchid; */
+    }
+    .Adver1{
+      gap: -160px;
     }
  .Articletext{
     display: block;
     font-size: 10px; 
  }
     .text{
-      margin-left: 30px;
+      color: black;
+      font-size: 14px;
     }
 
     .Latestimage{
@@ -702,17 +716,19 @@ overflow: hidden;
 }
 .Article{
   width: 300px;
+  height: 208px;
 }
 .textFitness{
   font-size: 12px;
   margin-left: 5px;
 }
 .FitnessimageAll{
-  width: 200px;
-  height: 200px;
+  width: 195px;
+  height: 190px;
 }
 .singleImageForAll{
-  width: auto;
+  width: 303px;
+  margin-top: 14px;
 }
 .Allone1{
 
@@ -728,8 +744,8 @@ overflow: hidden;
   
 }
 .Allone1{
-  font-size: 10px;
-  width: auto;
+  font-size: 11px;
+  width: 250px;
   margin-left: 10px;
 }
 .Article2Respo{
