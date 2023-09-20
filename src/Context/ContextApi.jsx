@@ -289,9 +289,10 @@ const ContextApi = (props) => {
     
     id: 40,
     category: "Technology",
-  name: "The Internet of Things (IoT) Revolution",
+    name: "The Internet of Things (IoT) Revolution",
     image: "https://www.gbnews.ch/wp-content/gbnews-uploads/2016/06/IoT.png",
-    text: "Learn how the Internet of Things is transforming our daily lives, from smart homes and cities to industrial automation and connected devices.This article explores recent breakthroughs in the field of quantum computing, including advancements in qubits and quantum algorithms, and their potential to revolutionize computing as we know it.Since then, AI has been used to help sequence RNA for vaccines and model human speech, technologies that rely on model- and algorithm-based machine learning and increasingly focus on perception, reasoning and generalization. With innovations like these, AI has re-taken center stage like never before — and it won’t cede the spotlight anytime soon.Manufacturing has been benefiting from AI for years. With AI-enabled robotic arms and other manufacturing bots dating back to the 1960s and 1970s, the industry has adapted well to the powers of AI. These industrial robots typically work alongside humans to perform a limited range of tasks like assembly and stacking, and predictive analysis sensors keep equipment running smoothly.Journalism is harnessing AI too, and will continue to benefit from it. One example can be seen in The Associated Press’ use of Automated Insights, which produces thousands of earning reports stories per year. But as generative AI writing tools, such as ChatGPT, enter the market, questions about their use in journalism abound."
+    text: "Learn how the Internet of Things is transforming our daily lives, from smart homes and cities to industrial automation and connected devices.This article explores recent breakthroughs in the field of quantum computing, including advancements in qubits and quantum algorithms, and their potential to revolutionize computing as we know it.Since then, AI has been used to help sequence RNA for vaccines and model human speech, technologies that rely on model- and algorithm-based machine learning and increasingly focus on perception, reasoning and generalization. With innovations like these, AI has re-taken center stage like never before — and it won’t cede the spotlight anytime soon.Manufacturing has been benefiting from AI for years. With AI-enabled robotic arms and other manufacturing bots dating back to the 1960s and 1970s, the industry has adapted well to the powers of AI. These industrial robots typically work alongside humans to perform a limited range of tasks like assembly and stacking, and predictive analysis sensors keep equipment running smoothly.Journalism is harnessing AI too, and will continue to benefit from it. One example can be seen in The Associated Press’ use of Automated Insights, which produces thousands of earning reports stories per year. But as generative AI writing tools, such as ChatGPT, enter the market, questions about their use in journalism abound.Explore the latest trends in robotics and automation technologies, from self-driving cars to robotic healthcare assistants and manufacturing automation.This article explores recent breakthroughs in the field of quantum computing, including advancements in qubits and quantum algorithms, and their potential to revolutionize computing as we know it.Since then, AI has been used to help sequence RNA for vaccines and model human speech, technologies that rely on model- and algorithm-based machine learning and increasingly focus on perception, reasoning and generalization. With innovations like these, AI has re-taken center stage like never before — and it won’t cede the spotlight anytime soon.Manufacturing has been benefiting from AI for years. With AI-enabled robotic arms and other manufacturing bots dating back to the 1960s and 1970s, the industry has adapted well to the powers of AI. These industrial robots typically work alongside humans to perform a limited range of tasks like assembly and stacking, and predictive analysis sensors keep equipment running smoothly.Journalism is harnessing AI too, and will continue to benefit from it. One example can be seen in The Associated Press’ use of Automated Insights, which produces thousands of earning reports stories per year. But as generative AI writing tools, such as ChatGPT, enter the market, questions about their use in journalism abound."
+
   },
   {
     id: 41,
@@ -305,98 +306,98 @@ const ContextApi = (props) => {
       category: "Fitness",
       title: "Cardiovascular Health and Exercise",
       image: "https://www.frontiersin.org/files/Articles/458447/fcvm-06-00069-HTML/image_m/fcvm-06-00069-g001.jpg",
-      content: "Explore the importance of cardiovascular health and the role of exercise in maintaining a healthy heart. Learn about various cardio workouts and lifestyle choices for better heart health.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Explore the importance of cardiovascular health and the role of exercise in maintaining a healthy heart. Learn about various cardio workouts and lifestyle choices for better heart health.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 43,
       category: "Fitness",
       title: "Nutrition Essentials for Athletes",
       image: "https://blog.nasm.org/hubfs/sports-nutrition-guide.jpg",
-      content: "Discover the essential nutritional requirements for athletes and active individuals. Find out how to fuel your body for peak performance, recovery, and overall well-being.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Discover the essential nutritional requirements for athletes and active individuals. Find out how to fuel your body for peak performance, recovery, and overall well-being.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 44,
       category: "Fitness",
       title: "Yoga and Mindfulness for Stress Reduction",
       image: "https://www.ekhartyoga.com/media/image/articles/6-stress-relieving-pose.jpg",
-      content: "Learn about the benefits of incorporating yoga and mindfulness practices into your daily routine. Explore techniques for reducing stress, improving mental clarity, and enhancing relaxation.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Learn about the benefits of incorporating yoga and mindfulness practices into your daily routine. Explore techniques for reducing stress, improving mental clarity, and enhancing relaxation.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 45,
       category: "Fitness",
       title: "High-Intensity Interval Training (HIIT)",
       image: "https://images.ctfassets.net/psi7gc0m4mjv/1b1d9f0c-67b7-45b7-bb72-31efc4da28d5/0ac6571699c4591043efd109fbf21052/issa-blog-header-hiit.jpg",
-       content:"Youll work harder than you do when you do a typical cardio workout. But youll do it in spurts of 30 seconds to 3 minutes. Then you’ll have a chance to recover for about the same amount of time or longer.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text:"Youll work harder than you do when you do a typical cardio workout. But youll do it in spurts of 30 seconds to 3 minutes. Then you’ll have a chance to recover for about the same amount of time or longer.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 46,
       category: "Fitness",
       title: "Nutrition Myths Debunked",
       image: "https://www.nocofitness.com/wp-content/uploads/2018/11/Nutrition-Myths-Debunked.jpg",
-      content: "Separate fact from fiction as we debunk common nutrition myths. Learn about proper dietary choices and get evidence-based insights into maintaining a healthy diet.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Separate fact from fiction as we debunk common nutrition myths. Learn about proper dietary choices and get evidence-based insights into maintaining a healthy diet.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 47,
       category: "Fitness",
       title: "Strength Training for Beginners",
       image: "https://www.muscleandfitness.com/wp-content/uploads/2019/03/Kettleball.jpg?quality=86&strip=all",
-      content: "If you're new to strength training, this article is for you. Discover the basics of weightlifting, resistance training, and building muscle safely and effectively.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "If you're new to strength training, this article is for you. Discover the basics of weightlifting, resistance training, and building muscle safely and effectively.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 48,
       category: "Fitness",
       title: "Running Tips for Beginners",
       image: "https://i.ndtvimg.com/i/2017-12/running_696x400_71514191052.jpg",
-      content: "Are you considering taking up running? Learn valuable tips and advice for beginner runners, including proper footwear, pacing, and injury prevention.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Are you considering taking up running? Learn valuable tips and advice for beginner runners, including proper footwear, pacing, and injury prevention.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 49,
       category: "Fitness",
       title: "Healthy Habits for a Balanced Lifestyle",
       image: "https://media.defense.gov/2020/Apr/30/2002291608/1920/1080/0/200501-F-PO640-0034.JPG",
-      content: "Explore healthy habits that contribute to a balanced lifestyle. From sleep routines to stress management, discover practices that promote overall well-being.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Explore healthy habits that contribute to a balanced lifestyle. From sleep routines to stress management, discover practices that promote overall well-being.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 50,
       category: "Fitness",
       title: "Mind-Body Connection in Fitness",
       image: "https://www.hhhealth.com/wp-content/uploads/2022/07/AdobeStock_295859885-1024x480.jpeg",
-      content: "Understand the mind-body connection in fitness and how mental well-being influences physical performance. Learn techniques for enhancing focus and motivation during workouts.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Understand the mind-body connection in fitness and how mental well-being influences physical performance. Learn techniques for enhancing focus and motivation during workouts.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 51,
       category: "Fitness",
       title: "Outdoor Activities for Fitness Enthusiasts",
       image: "https://zumpermedia.s3.amazonaws.com/blog/wp-content/uploads/2022/07/12104938/best-cities-for-outdoor-enthusiasts.jpg",
-      content: "Embrace the outdoors as your fitness playground. Discover a variety of outdoor activities that not only keep you fit but also provide a refreshing change of scenery.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Embrace the outdoors as your fitness playground. Discover a variety of outdoor activities that not only keep you fit but also provide a refreshing change of scenery.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 52,
       category: "Fitness",
       title: "Effective Core Workouts",
       image: "https://prod-ne-cdn-media.puregym.com/media/790253/blogimages_abs-26_12.jpg?quality=80",
-      content: "Strengthen your core muscles with effective workout routines. Learn about exercises that target your abdominal and lower back muscles for better stability and posture.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Strengthen your core muscles with effective workout routines. Learn about exercises that target your abdominal and lower back muscles for better stability and posture.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 53,
       category: "Fitness",
       title: "The Importance of Stretching",
       image: "https://www.starhealth.in/blog/wp-content/uploads/2022/04/Stretching-and-its-importance.jpg",
-      content: "Discover the benefits of incorporating stretching into your fitness routine. Learn about different stretching techniques, including static and dynamic stretches.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Discover the benefits of incorporating stretching into your fitness routine. Learn about different stretching techniques, including static and dynamic stretches.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 54,
       category: "Fitness",
       title: "Mental Health and Exercise",
       image: "https://decisionmaker.in/wp-content/uploads/2022/12/How-Beneficial-is-Exercise-for-Our-Mental-Health.jpg",
-      content: "Explore the positive impact of regular exercise on mental health. Learn how physical activity can reduce stress, anxiety, and depression while enhancing overall well-being.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+     text: "Explore the positive impact of regular exercise on mental health. Learn how physical activity can reduce stress, anxiety, and depression while enhancing overall well-being.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
     {
       id: 55,
       category: "Fitness",
       title: "Healthy Eating on a Budget",
       image: "https://foodie.sysco.com/wp-content/uploads/2019/07/Simply-Classic-Burger.jpg",
-      content: "Discover practical tips and strategies for maintaining a nutritious diet without breaking the bank. Learn how to make cost-effective and healthy food choices.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
+      text: "Discover practical tips and strategies for maintaining a nutritious diet without breaking the bank. Learn how to make cost-effective and healthy food choices.Flexibility workouts, such as stretching, don’t directly contribute to heart health. What they do is benefit musculoskeletal health, which enables you to stay flexible and free from joint pain, cramping and other muscular issues. That flexibility is a critical part of being able to maintain aerobic exercise and resistance training, says Stewart."
     },
       {
         id: 57,

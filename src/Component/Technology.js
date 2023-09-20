@@ -8,27 +8,29 @@ const Technology = () => {
   return (
     <>
       <h1 className="Latest">Technology Article </h1>
-      <div className="Adver">
-        <div className="Articlelist">
-          {Data.filter((item) => item.id >= 30 && item.id <= 40).map(
-            (item, index) => (
-              <div key={index}>
-                <NavLink to={`/Navigate/${item.id}`}>
-                  <div className="Article">
-                    <img
-                      className="FitnessimageAll"
-                      src={item.image}
-                      alt="Not Found"
-                    />
-                    <div className="text">
-                      <h2>{item.name}</h2>
-                      <p>{item.text.slice(0, 80)}</p>
+      <div className="Fitness">
+        <div className="Adver">
+          <div className="Articlelist">
+            {Data.filter((item) => item.id >= 30 && item.id <= 38).map(
+              (item, index) => (
+                <div key={index}>
+                  <NavLink to={`/Navigate/${item.id}`}>
+                    <div className="Article">
+                      <img
+                        className="FitnessimageAll"
+                        src={item.image}
+                        alt="Not Found"
+                      />
+                      <div className="text">
+                        <h2>{item.name}</h2>
+                        <p>{item.text.slice(0, 80)}</p>
+                      </div>
                     </div>
-                  </div>
-                </NavLink>
-              </div>
-            )
-          )}
+                  </NavLink>
+                </div>
+              )
+            )}
+          </div>
         </div>
         <div className="Advlatest">
           <div>

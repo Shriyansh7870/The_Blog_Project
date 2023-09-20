@@ -73,8 +73,9 @@ const Navigate = () => {
             <NavLink to={`/Navigate/${item.id}`}>
               <img className="latestimage" src={item.image} alt="Not Found" />
               <div className="text">
+                <h2>{item.title}</h2>
                 <h2>{item.name}</h2>
-                <p>{item.text.slice(0, 135)}..</p>
+                <p>{item.text.slice(0, 120)}</p>
               </div>
             </NavLink>
           </div>

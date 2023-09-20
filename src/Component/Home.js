@@ -51,16 +51,11 @@ const Home = () => {
           }
         )}
       </div>
-      <h1 className="Latest">The Latest Article</h1>
+      <h1 className="NewLastest">The Latest Article</h1>
       <div className="Adver">
         <div className="Articlelist ">
           {Data.filter((item) => item.id >= 72 && item.id <= 77).map(
             (item, index) => {
-              const wordnext2 = item.name?.split(" ") || [];
-              const displayText3 =
-                wordnext2.length < 20
-                  ? `${wordnext2.slice(0, 20).join(" ")}...`
-                  : item.name || "";
               return (
                 <div key={index}>
                   <NavLink to={`/Navigate/${item.id}`}>
@@ -71,8 +66,8 @@ const Home = () => {
                         alt="Not Found"
                       />
                       <div className="ArticelResponsivetext">
-                        <h1>{displayText3}</h1>
-                        <p>{item.text?.slice(0, 70) || ""}</p>
+                        <h1>{item.name.slice(0, 20)}..</h1>
+                        <p>{item.text.slice(0, 160)}</p>
                       </div>
                     </div>
                   </NavLink>
@@ -80,9 +75,6 @@ const Home = () => {
               );
             }
           )}
-          <div>
-            <h1>Load_More</h1>
-          </div>
           <img
             className="divinner"
             src="https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/07/Jawan-Shah-Rukh-Khan.jpg?ssl=1&quality=80&w=f"
@@ -94,11 +86,6 @@ const Home = () => {
             <h1 className="Latest">Top Post</h1>
             {Data.filter((item) => item.id >= 72 && item.id <= 75).map(
               (item, index) => {
-                const wordnext = item.text?.split(" ") || [];
-                const displayText2 =
-                  wordnext.length < 5
-                    ? `${wordnext.slice(0, 5).join(" ")}...`
-                    : item.name || "";
                 return (
                   <div key={index}>
                     <NavLink to={`/Navigate/${item.id}`}>
@@ -109,9 +96,8 @@ const Home = () => {
                           alt="Not Found"
                         />
                         <div className="text2">
-                          <h3>{item.name}</h3>
-                          <p>{displayText2}</p>
-                          <p>{item.text?.slice(0, 40) || ""}</p>
+                          <h3>{item.name.slice(0, 20)}..</h3>
+                          <p>{item.text.slice(0, 140)}..</p>
                         </div>
 
                         <div className="number">
@@ -138,12 +124,12 @@ const Home = () => {
               <div key={index} className="HomeLatest">
                 <NavLink to={`/Navigate/${item.id}`}>
                   <img
-                    className="latestimage"
+                    className=" downImage"
                     src={item.image}
                     alt="Not Found"
                   />
                   <div className="text">
-                    <h2>{item.name}</h2>
+                    <h2>{item.name.slice(0, 14)}..</h2>
                     <p>{item.text.slice(0, 135)}..</p>
                   </div>
                 </NavLink>

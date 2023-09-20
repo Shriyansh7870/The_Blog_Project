@@ -7,30 +7,33 @@ const Fitness = () => {
   return (
     <>
       <h1 className="Latest">Fitness Article </h1>
-      <div className="Adver">
-        <div className="Articlelist">
-          {Data.filter((item) => item.id >= 43 && item.id <= 53).map(
-            (item, index) => {
-              return (
-                <div key={index}>
-                  <NavLink to={`/Navigate/${item.id}`}>
-                    <div className="Article Article2Respo">
-                      <img
-                        className="FitnessimageAll"
-                        src={item.image}
-                        alt="Not Found"
-                      />
-                      <div className="text  textFitness">
-                        <h2>{item.title}</h2>
-                        <p>{item.content.slice(0, 80)}</p>
+      <div className="Fitness">
+        <div className="Adver">
+          <div className="Articlelist">
+            {Data.filter((item) => item.id >= 43 && item.id <= 52).map(
+              (item, index) => {
+                return (
+                  <div key={index}>
+                    <NavLink to={`/Navigate/${item.id}`}>
+                      <div className="Article Article2Respo">
+                        <img
+                          className="FitnessimageAll"
+                          src={item.image}
+                          alt="Not Found"
+                        />
+                        <div className="text  textFitness">
+                          <h2>{item.title}</h2>
+                          <p>{item.text.slice(0, 80)}</p>
+                        </div>
                       </div>
-                    </div>
-                  </NavLink>
-                </div>
-              );
-            }
-          )}
+                    </NavLink>
+                  </div>
+                );
+              }
+            )}
+          </div>
         </div>
+
         <div className="Advlatest">
           <div>
             <h1 className="Latest">Top Post</h1>
@@ -47,7 +50,7 @@ const Fitness = () => {
                             alt="Not Found"
                           />
                           <div className="Articletext Allone1">
-                            <h2>{item.content.slice(0, 30)}</h2>
+                            <h2>{item.text.slice(0, 30)}</h2>
                             <h1>{index + 1}</h1>
                           </div>
                         </div>
@@ -71,7 +74,7 @@ const Fitness = () => {
                         />
                         <div className=" Allone1">
                           <h2>{item.title}</h2>
-                          <h3>{item.content.slice(0, 60)}</h3>
+                          <h3>{item.text.slice(0, 60)}</h3>
                         </div>
                         <div className="number">
                           <h1>{index + 2}</h1>

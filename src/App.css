@@ -50,7 +50,6 @@ footer {
 body{
   width: auto;
   height: auto;
-  border: 6px solid green;
 }
 .Nav {
   background-color: #333;
@@ -151,9 +150,8 @@ a{
   text-decoration: none;
 } 
 .divinner{
-  width: 600px;
-  height: 360px;
-  border-radius: 15px;
+  width: 42vw;
+  margin-top: 10px;
   box-shadow: 4px 4px 6px rgb(12, 12, 12);
 }
 
@@ -164,8 +162,8 @@ a{
 }
 
 .bigimg img{
-  height: 500px;
-  width:850px;
+  height:40vw;
+  width:55vw;
   border-radius: 2%;
 }
 .bigimg2 {
@@ -185,10 +183,9 @@ a{
   border-radius: 2%;
 }
 .smallimg{
-  
   display: flex;
   flex-direction: column;
-  gap:3rem;
+  gap:25px;
 }
 .singleimg{
   height:130px;
@@ -199,35 +196,32 @@ a{
 }
 .smallimg img{
   border-radius: 2%;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  height:230px;
-  width:350px;
+  height:19vw;
+  width:35vw;
 }
 .img{
   display: flex;
-  gap:8rem;
+  justify-content: space-between;
 }
 .Latest{
-  margin-left: 80px;
-  margin-top: 10px;
-  font-size: 32px;
-   
+  margin:2vw 0px;
+  font-size: 3.2vw;
+   margin-left: 10px;
+}
+.NewLastest{
+margin: 3vw 0vw;
+font-size: 3.2vw;
 }
 .text{
    text-align: left;
-   /* margin-left:-40px; */
    width: 350px;
    color: rgb(10, 10, 10);
    font-size: 14px;  
 }
 .text4{
-  text-align: center;
-   /* margin-left:-40px; */
-   width: 350px;
-   color: rgb(10, 10, 10);
-   font-size: 14px;   
+   width: 25vw;
+   color: rgb(10, 10, 10);  
+   padding: 15px; 
 }
 .movieName{
   font-size:24px ;
@@ -238,20 +232,22 @@ a{
   margin-left: 20px;
   font-size: 18px;
   justify-content: end;
- /* margin-top: 8%; */
  color:rgb(16, 15, 15);
-
-
 }
 .text h2 {
-  text-align: center;
+  /* text-align: center; */
+  padding: 10px;
+  font-size: 2.5vw;
 }
 .text p{
-  text-align: center;
-  margin-left: 10px;
-  width: 300px;
+  text-align: left;
+  padding: 10px;
+  font-size: 1vw;
 }
-
+.downImage{
+  height: 20vw;
+  width: 100%;
+}
 .number{
   margin-left:14px;
   padding: 5px;
@@ -265,36 +261,36 @@ a{
 }
 
 .LatestDiv{
-  /* margin: 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.HomeLatest{
-  width: 400px;
-  text-align: center;
-  align-items: center;
-  
- 
- 
+.HomeLatest {
+border: 1px solid grey;
+width: 30vw;
+
+
 }
+
 .latestimage{
-  margin-left: 25px;
-  width: 350px;
-  height: 200px;
-  border-radius: 10px;  
-  box-shadow: 4px 4px 6px #333;
- 
+  width:28vw;
+  height: 16vw; 
+
+}
+.text4 h2{
+  
+  font-size: 2vw;
+}
+.text4 p{
+  font-size: 1.5vw;
 }
 .FitnessimageAll{
   margin-left: 25px;
   width: 280px;
   height: 200px;
-  border-radius: 10px;
 }
 .singleImageForAll{
-  height:120px;
-  width:300px;
+  width:30vw;
   border-radius: 10px;
 }
 .MultipleImageForAll{
@@ -303,24 +299,22 @@ a{
   border-radius: 10px;
 }
 .Latestimage{
-  width: 280px;
-  height: 160px;
-  border-radius: 10px;
- 
+  width: 16vw;
+  height: 9vw;
 }
 .Latestimage2{
-  width: 190px;
-  height: 160px;
-  border-radius: 10px;
-
+  width: 14vw;
 }
 .Article{
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: self-end;
+  justify-content: space-between;
   box-shadow: 2px 2px 5px rgba(24, 21, 21, 0.146);
+  width: 42vw;
+  margin: 5px 0px;
+}
+.ArticelResponsivetext{
   padding: 5px;
-  margin-top: 20px;
 }
 .homeimg{
   border-right: 2px solid ligtgr;
@@ -346,10 +340,9 @@ justify-content: center;
   flex-direction: column;
 }
 .Advertisement{
-  margin-top: 40px;
-  width:380px;
-  height:750px;
-  margin-left: 120px;
+  width:100%;
+  height:37vw;
+ 
 border: 4px solid rgb(216, 140, 140);
 }
 .Advertisement h1{
@@ -369,11 +362,9 @@ gap:160px;
   
 }
 .Advlatest{
-  display: flex;
-  flex-direction: column;
- 
-  margin-right: 10px;
-  margin-top: 10px;
+  border: 2px solid grey;
+  padding: 5px;
+  margin: auto;
 }
 .Articlelist{
   display: flex;
@@ -386,11 +377,18 @@ gap:160px;
 }
 .AllOne{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap:10px;
   
 }
-/*****.......navigate....*/
+.Fitness{
+  border:4px solid orange;
+  display: flex;
+}
+.firstFit{
+  margin-top: 40px;
+}
+/*............Navigate.........................................*/
 .ParentTop {
   display: flex;
   justify-content: space-between; 
@@ -466,6 +464,7 @@ gap:160px;
 
 @media screen and ( min-width: 280px) and ( max-width: 998px) {
   body{
+    border:4px solid red;
   
   }
  
@@ -473,16 +472,20 @@ gap:160px;
    .img{
     display: flex;
     flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
     gap:8rem;
+    border: 3px solid orange;
   }
    .bigimg img{
-    height: 300px;
-    width:300px;
+    height: 30vw;
+    width:30vw;
+    border:4px solid black;
   }
   .bigimg2 {
     height: 350px;
     width:200px;
-    /* border: 2px solid orange; */
   }
   .bigimg3{
     height: 350px;
@@ -531,7 +534,6 @@ gap:160px;
     box-shadow: 2px 2px 4px grey;
     border-radius: 10px;
     gap:10px;
-    /* border:4px solid orchid; */
     }
     .Adver1{
       gap: -160px;
@@ -560,7 +562,6 @@ margin-left: -40px;
     height: 300px;
   }
   .Advertisement{
-    /* margin-top: -180px; */
     display: none;
     width:320px;
     height:600px;
@@ -596,13 +597,10 @@ margin-left: -40px;
   padding: 5px;
   width: 250px;
   margin-top: 20px;
-  /* border: 4px solid palevioletred; */
 }
 .latestimage{
- 
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;  
+  width: 30vw;
+  height: 20vw; 
   box-shadow: 4px 4px 6px #333;
  
 }
@@ -617,7 +615,6 @@ margin-left: -40px;
 .NewResponsiveArticle{
 flex-direction: column;
 display: flex;
-/* gap:10px; */
 overflow: hidden;
 }
 .ArticelResponsivetext{
