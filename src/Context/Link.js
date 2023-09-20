@@ -85,7 +85,11 @@ const NavBar = () => {
               </a>
             </h2>
             <h2>
-              <a href="https://github.com/Shriyansh7870" target="_blank">
+              <a
+                href="https://github.com/Shriyansh7870"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa-brands fa-github"></i>
               </a>
             </h2>
