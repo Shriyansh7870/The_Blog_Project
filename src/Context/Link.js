@@ -77,6 +77,7 @@ const NavBar = () => {
             <h2>
               <a
                 href="https://www.instagram.com/shriyansh7870/"
+                rel="noreferrer"
                 target="_blank"
               >
                 {" "}
@@ -89,7 +90,11 @@ const NavBar = () => {
               </a>
             </h2>
             <h2>
-              <a href="https://www.linkedin.com/in/shri7870/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/shri7870/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i className="fa-brands fa-facebook"></i>
               </a>
             </h2>
