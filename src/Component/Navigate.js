@@ -44,13 +44,31 @@ const Navigate = () => {
             </div>
             <div className="icons">
               <h2>
-                <i className="fa-brands fa-square-instagram"></i>
+                <a
+                  href="https://www.instagram.com/shriyansh7870/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-square-instagram"></i>
+                </a>
               </h2>
               <h2>
-                <i className="fa-brands fa-github"></i>
+                <a
+                  href="https://github.com/Shriyansh7870"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa-brands fa-github"></i>{" "}
+                </a>
               </h2>
               <h2>
-                <i className="fa-brands fa-facebook"></i>
+                <a
+                  href="https://www.linkedin.com/in/shri7870/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fa-brands fa-facebook"></i>
+                </a>
               </h2>
             </div>
           </div>
