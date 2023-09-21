@@ -10,7 +10,7 @@ const Hollywood = () => {
       <div className="Hollywood">
         <div className="Adver">
           <div className="Articlelist">
-            {Data.filter((item) => item.id >= 17 && item.id <= 25).map(
+            {Data.filter((item) => item.id >= 17 && item.id <= 24).map(
               (item, index) => {
                 return (
                   <div key={index}>

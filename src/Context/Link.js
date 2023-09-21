@@ -31,7 +31,7 @@ const NavBar = () => {
               <GiHamburgerMenu className="menu-icon" onClick={toggleMenu} />
 
               <ul className={`menu ${menuOpen ? "open" : ""}`}>
-                <li>
+                <li className="color1">
                   <Link to={"/"}>Home</Link>
                 </li>
                 <li>

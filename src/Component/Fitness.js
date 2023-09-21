@@ -10,7 +10,7 @@ const Fitness = () => {
       <div className="Fitness">
         <div className="Adver">
           <div className="Articlelist">
-            {Data.filter((item) => item.id >= 43 && item.id <= 52).map(
+            {Data.filter((item) => item.id >= 43 && item.id <= 51).map(
               (item, index) => {
                 return (
                   <div key={index}>
