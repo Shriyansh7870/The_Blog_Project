@@ -199,7 +199,7 @@ a{
 } 
 .divinner{
   width: 42vw;
-  margin-top: 10px;
+  margin-top: 20px;
   box-shadow: 4px 4px 6px rgb(12, 12, 12);
 }
 
@@ -389,7 +389,7 @@ justify-content: center;
 }
 .Advertisement{
   width:100%;
-  height:52vw;
+  height:36vw;
  
 border: 4px solid rgb(216, 140, 140);
 }
