@@ -23,7 +23,7 @@
  color:white;
 } */
 footer {
-  background-color: #333;
+  background-color: #c35353;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -524,7 +524,7 @@ gap:160px;
 
 .fa-brands{
   font-size: 32px;
-  color: red;
+  color: rgb(30, 20, 228);
 }
 
 
