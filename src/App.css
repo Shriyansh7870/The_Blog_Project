@@ -6,7 +6,7 @@
   box-sizing: border-box;
   /* font-family: 'Lilita One', cursive;  */
  /* font-family: 'Poppins', sans-serif; */
- /* font-family: 'Merriweather',serif;*/
+ /* font-family: 'Merriweather',serif; */
   font-family: 'Montserrat', sans-serif; 
 
 }
@@ -86,7 +86,8 @@ body{
   align-items: center;
   padding: 1vw;
   font-family: 'Lilita One', cursive; 
-  color: rgba(37, 94, 237, 0.653);
+  color: black;
+  font-weight: bolder;
 
 }
 
@@ -146,13 +147,13 @@ li a{
     left: 0;
     width: 98%;
     height: 50%;
-    background-color:rgba(128, 128, 128, 0.621);
+    background-color:rgba(255, 255, 255, 0.511);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    backdrop-filter: blur(10);
+    backdrop-filter: blur(10px);
     
 
   }
@@ -336,9 +337,8 @@ width: 30vw;
   font-size: 1.5vw;
 }
 .FitnessimageAll{
-  margin-left: 25px;
-  width: 280px;
-  height: 200px;
+  /* margin-left: 25px; */
+  width: 28vw;
 }
 .singleImageForAll{
   width:30vw;
@@ -403,7 +403,8 @@ border: 4px solid rgb(216, 140, 140);
 }
 .Adver{
 display: flex;
-gap:160px;
+ justify-content: space-between;
+ width: 100%;
 
 }
 .underimg{
@@ -442,7 +443,6 @@ gap:160px;
   margin-top: 40px;
 }
 .Bollywood{
-
   display: flex;
   justify-content: space-around;
   padding: 2vw;
@@ -548,10 +548,7 @@ gap:160px;
 
 
 @media screen and ( min-width: 280px) and ( max-width: 998px) {
-  body{
-   border: 2px solid red;
- 
-  }
+
   .Container{
     padding: 2vw;
   }
@@ -704,7 +701,7 @@ gap:160px;
     }
     .ParentTop {
       display: block;
-      border: 1px solid red;
+
     }
     .navtext{
       text-align: justify;
@@ -717,16 +714,17 @@ gap:160px;
       font-size: 6.5vw;
     }
     .the{
-      font-size: 3vw;
+      font-size: 5vw;
+      font-weight: 600;
     }
     .siren{
-      font-size: 4vw;
+      font-size: 7vw;
     }
     .siren::first-letter{
-      font-size: 6vw;
+      font-size: 10vw;
     }
     .the::first-letter{
-      font-size: 6vw;
+      font-size: 10vw;
     }
      .Nav ul li {
       font-size:2.5vw;
@@ -735,11 +733,11 @@ gap:160px;
       font-weight: bolder;
     }
      li a{
-   color:blue;
+   color:black;
    border-bottom: 2px solid white;
    text-decoration: none;
    font-weight:bolder;
-  
+  font-size: 25px;
    
     }
     .NavIcons{
