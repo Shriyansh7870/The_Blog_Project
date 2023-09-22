@@ -46,7 +46,7 @@ const Technology = () => {
                         alt="Not Found"
                       />
                       <div className="Articletext Allone1">
-                        <h2>{item.text.slice(0, 80)}</h2>
+                        <h2>{item.text.slice(0, 60)}</h2>
                         <h1>{index + 1}</h1>
                       </div>
                     </div>
